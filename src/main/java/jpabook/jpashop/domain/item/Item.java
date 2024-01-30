@@ -24,7 +24,7 @@ public abstract class Item {
     private int stockQuantity;
 
 
-    @OneToMany(mappedBy = "items")
+    @OneToMany(mappedBy = "item")
     private Collection<OrderItem> orderItem;
 
     //==비즈니스 로직==//

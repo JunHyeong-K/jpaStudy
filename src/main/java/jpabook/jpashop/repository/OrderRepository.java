@@ -28,7 +28,7 @@ public class OrderRepository {
     /**
      * 동적쿼리인데 어짜피 지금 못함 ㅅㄱ
      */
-    public List<Order> findAll(OrderSearch orderSearch) {
+    public List<Order> findAllByString(OrderSearch orderSearch) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Order> cq = cb.createQuery(Order.class);
         Root<Order> o = cq.from(Order.class);
