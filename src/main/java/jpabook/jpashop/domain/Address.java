@@ -9,4 +9,13 @@ public class Address {
     private String city;
     private String street;
     private String zipcode;
+
+    protected  Address(){
+    } // 아 함부로 건들면 ㅈ되는구나
+    
+    public Address(String city, String street, String zipcode) {
+        this.city = city;
+        this.street = street;
+        this.zipcode = zipcode;
+    }
 }
